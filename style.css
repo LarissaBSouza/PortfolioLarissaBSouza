@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.left-menu {
+   display: flex;
+   flex-direction: column;
+   padding: 2rem;
+   width: 9vh;
+}
+
+.img-logo {
+    width: 1.9rem;
+    padding: 1rem;
+}
+
+.first-container {
+    display: flex;
+}
+
+.img-main {
+    padding: 3rem 3rem 3rem .6rem;
+    width: 90vh;
+}
+
+.button-portfolio, .button-skills {
+    border: none;
+    width: 20rem;
+    height: 2.4rem;
+    border-radius: 5px;
+    margin: 1.7rem;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+}
