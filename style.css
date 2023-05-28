@@ -11,9 +11,10 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
+    width: 100vh;
     height: 100;
     overflow-x: hidden;
+    overflow-y: visible;
 }
 
 .left-menu {
@@ -113,8 +114,8 @@ body {
     font-weight: 900;
 }
 
-hr {
-    border: solid 2px #FFFFFF;
+.name-line {
+    border: solid 2px #C698E8;
 }
 
 .presentation,
@@ -136,9 +137,42 @@ hr {
     border-right: 0.10em solid #FFFFFF;
 }
 
+#name::selection {
+    background-color: #C698E8;
+    color: #FFFFFF;
+}
+
 .container-portfolio {
-    margin: 4rem;
     display: flex;
+    width: 100vh;
+    justify-content: flex-end;
+}
+
+#portfolio {
+    font-size: 2.6rem;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    text-align: end;
+    color: #25295B;
+}
+
+.portfolio-line {
+    width: 100vh;
+    border: 1px solid #FFFFFF;
+}
+
+.container-cards {
+    display: flex;
+}
+
+.card-portfolio {
+    background-color: #25295B;
+    margin: 5rem;
+}
+
+.img-portfolio {
+    width: 15rem;
+    margin: 18px;
 }
 
 @keyframes name {
@@ -151,3 +185,16 @@ hr {
         width: fit-content;
     }
 }
+
+::-webkit-scrollbar {
+    background-color: transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: transparent;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+  
