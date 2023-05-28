@@ -161,17 +161,34 @@ body {
     border: 1px solid #FFFFFF;
 }
 
-.container-cards {
+.containers-cards {
     display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 30vw;
 }
 
 .card-portfolio {
     background-color: #25295B;
-    margin: 5rem;
+    flex: 1;
+    margin: 3rem;
+    cursor: pointer;
+    width: 8rem;
+    height: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-shadow: 25px 24px 64px -31px rgba(37, 41, 91, 1);
+    -moz-box-shadow: 25px 24px 64px -31px rgba(37, 41, 91, 1);
+    box-shadow: 25px 24px 64px -31px rgba(37, 41, 91, 1);
+}
+
+.card-portfolio:hover {
+    transform: scale(1.1);
 }
 
 .img-portfolio {
-    width: 15rem;
+    width: 13rem;
     margin: 18px;
 }
 
@@ -188,13 +205,12 @@ body {
 
 ::-webkit-scrollbar {
     background-color: transparent;
-  }
-  
-  ::-webkit-scrollbar-thumb {
+}
+
+::-webkit-scrollbar-thumb {
     background-color: transparent;
-  }
-  
-  ::-webkit-scrollbar-track {
+}
+
+::-webkit-scrollbar-track {
     background-color: transparent;
-  }
-  
+}
