@@ -13,14 +13,14 @@ body {
     background-size: cover;
     width: 100%;
     height: 100;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .left-menu {
-   display: flex;
-   flex-direction: column;
-   padding: 2rem;
-   width: 9vh;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    width: 9vh;
 }
 
 .img-logo {
@@ -28,7 +28,15 @@ body {
     padding: 1rem;
 }
 
-.first-container, .presentation, .container-main, .name, .container-nav {
+.img-logo:hover {
+    transform: scale(1.1);
+}
+
+.first-container,
+.presentation,
+.container-main,
+.name,
+.container-nav {
     display: flex;
 }
 
@@ -43,7 +51,8 @@ body {
     margin-top: 2rem;
 }
 
-.button-portfolio, .button-skills {
+.button-portfolio,
+.button-skills {
     border: none;
     width: 23rem;
     height: 3rem;
@@ -57,17 +66,45 @@ body {
 
 .button-portfolio {
     background-color: #C698E8;
-    color: #FFFFFF;
     margin-top: 2rem;
 }
 
 .button-skills {
     background-color: #FFFFFF;
     margin-top: 1.5rem;
+}
+
+.button-portfolio>a {
+    color: #FFFFFF;
+}
+
+.button-skills>a {
     color: #C698E8;
 }
 
+.button-portfolio>a,
+.button-skills>a {
+    text-decoration: none;
+}
+
+.button-portfolio:hover {
+    background-color: #b77ce0;
+    transform: scale(1.1);
+}
+
+.button-skills:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.1);
+}
+
 .presentation {
+    color: #25295B;
+}
+
+.presentation-dev {
+    margin-top: .8rem;
+    margin-left: 15rem;
+    font-size: 1.3rem;
     color: #25295B;
 }
 
@@ -76,7 +113,12 @@ body {
     font-weight: 900;
 }
 
-.presentation, .name {
+hr {
+    border: solid 2px #FFFFFF;
+}
+
+.presentation,
+.name {
     flex-direction: column;
 }
 
@@ -86,7 +128,26 @@ body {
     height: 5rem;
 }
 
-.name {
-    font-size: 4rem;
+#name {
+    font-size: 3.5rem;
     flex-direction: column;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 0.10em solid #FFFFFF;
+}
+
+.container-portfolio {
+    margin: 4rem;
+    display: flex;
+}
+
+@keyframes name {
+
+    from {
+        width: 0;
+    }
+
+    to {
+        width: fit-content;
+    }
 }
