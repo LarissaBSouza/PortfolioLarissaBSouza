@@ -1,6 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&family=Questrial&display=swap');
+
 * {
     margin: 0;
     padding: 0;
+}
+
+body {
+    font-family: 'Questrial', sans-serif;
+    background-image: url('images/background.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100;
+    overflow: hidden;
 }
 
 .left-menu {
@@ -15,21 +28,65 @@
     padding: 1rem;
 }
 
-.first-container {
+.first-container, .presentation, .container-main, .name, .container-nav {
     display: flex;
 }
 
+.container-nav {
+    margin-left: 1.8rem;
+    align-items: center;
+}
+
 .img-main {
-    padding: 3rem 3rem 3rem .6rem;
-    width: 90vh;
+    padding: .6rem;
+    width: 95vh;
+    margin-top: 2rem;
 }
 
 .button-portfolio, .button-skills {
     border: none;
-    width: 20rem;
-    height: 2.4rem;
-    border-radius: 5px;
-    margin: 1.7rem;
+    width: 23rem;
+    height: 3rem;
+    border-radius: 8px;
     font-size: 1.6rem;
     text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
+    margin-left: 3rem;
+}
+
+.button-portfolio {
+    background-color: #C698E8;
+    color: #FFFFFF;
+    margin-top: 2rem;
+}
+
+.button-skills {
+    background-color: #FFFFFF;
+    margin-top: 1.5rem;
+    color: #C698E8;
+}
+
+.presentation {
+    color: #25295B;
+}
+
+.name {
+    color: #FFFFFF;
+    font-weight: 900;
+}
+
+.presentation, .name {
+    flex-direction: column;
+}
+
+.presentation {
+    font-size: 1.7rem;
+    margin: -2rem;
+    height: 5rem;
+}
+
+.name {
+    font-size: 4rem;
+    flex-direction: column;
 }
